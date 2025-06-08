@@ -1,75 +1,104 @@
+<!-- 
+   João Tomás Lopes | 3220663
+
+   ExercicioPortfolio
+
+   Ano letivo (3º ano) 2024-2025
+
+   2º Semestre 
+  
+  Laboratório de Projeto II
+
+  Design Gráfico e Multimédia
+
+  Esad.cr | Escola Superior de Artes e Design das Caldas da Rainha
+ 
+  Docente: Marco Heleno
+
+  09-06-2025
+  -->
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | JO</title>
+  <!-- Ficheiro Css -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Biblioteca p5.js -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <!-- Pré-conexão para carregamento mais rápido das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonte Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900&display=swap" rel="stylesheet">
+  <!-- Ícone do site (favicon) -->
   <link rel="icon" type="image/png" href="source/favicon.png" width="16">
-
 </head>
 <body id="bodyindex">
- 
-  <!-- Header -->
   <div class="container">
     <header>
       <div class="logo">
+        <!-- Logótipo -->
         <a href="index.html"><img src="source/logo.png" alt="logo Joao" width="50px"></a>
       </div>
 
+      <!-- Ícone do menu hambúrguer -->
       <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
           <span></span>
       </div>
 
+      <!-- Navegação principal -->
       <nav onmouseover="hideCustomCursor()" onmouseout="showCustomCursor()">
         <a href="index.html" class="active" >Home</a>
         <a href="work.html">Projects</a>
         <a href="about.html">About</a>
-
       </nav>
     </header>
 
-    <a href="work.html" target="_blank" ><div id="meu_cursor_delay"><img src="source/textoGiratorio.svg" alt="" width="105vw" id="texto-giratorio"><!--<h4>My<br>Projects</h4>--></div></a>
-      
-      <div id="meu_cursor"></div>
- </a>
+    <!-- Cursor personalizado -->
+    <a href="work.html" target="_blank" >
+      <div id="meu_cursor_delay">
+        <img src="source/textoGiratorio.svg" alt="" width="105vw" id="texto-giratorio">
+        <!-- <h4>My<br>Projects</h4> -->
+      </div>
+    </a>
+    <!-- cursor customizado pipeta -->
+    <div id="meu_cursor"></div>
   
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="close-btn" id="closeBtn">&times;</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="work.html">Projects</a>
-      <a href="about.html">About</a>
-    </nav>
-  </div>
+    <!-- Menu mobile (aparece em ecrãs pequenos) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-btn" id="closeBtn">&times;</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="work.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
 
-  <!-- Hero Section -->
+    <!-- Redes sociais lateral -->
     <div class="social-media">
       <div class="icons" onmouseover="hideCustomCursor()" onmouseout="showCustomCursor()">
         <a href="https://www.instagram.com/" ><img src="source/insta.png" alt="Instagram"></a>
         <br><a href="https://x.com/"><img src="source/twitter.png" alt="Twitter"></a>
         <br><a href="https://www.facebook.com/?locale=pt_PT"><img src="source/facebook.png" alt="Facebook"></a>
-        <div class="rectangle">
-
-        </div>
+        <div class="rectangle"></div>
         <p>Social Media</p>
       </div>
     </div>
-</div>
-<div class="title-index overlay">
+  </div>
+
+  <!-- Olá Hello -->
+  <div class="title-index overlay">
     <img src="source/olahellho-05.png" alt="">
+  </div>
 
-</div>
-
-
- <script src="script.js"></script>
+  <!-- Script das páginas -->
+  <script src="script.js"></script>
 </body>
 </html>
