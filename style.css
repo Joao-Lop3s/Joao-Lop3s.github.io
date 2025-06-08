@@ -279,6 +279,10 @@ padding: 3% 10%;
   line-height: 55px;
 }
 
+.about-text h6{
+  margin-right: 8vw;
+}
+
 .about-text .second-color{
   font-size: 5rem;
 }
@@ -788,8 +792,4 @@ button:hover {
 
 .about-content h1 span {
   color: #ff6600;
-}
-
-.about-text h6{
-  margin-right: 170px;
 }
