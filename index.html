@@ -1,23 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | JO</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <style>
-        h1{
-            font-size: 500px;
-            color: blue;
-            text-align: center;
-        } 
-    </style>
-    
-<h1>Hello, World!</h1> 
+<body id="bodyindex">
  
-    
+  <!-- Header -->
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="source/logo.png" alt="logo Joao" width="50px"></a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+
+      <nav onmouseover="hideCustomCursor()" onmouseout="showCustomCursor()">
+        <a href="index.html" class="active" >Home</a>
+        <a href="Work.html">Projects</a>
+        <a href="about.html">About</a>
+
+      </nav>
+    </header>
+
+    <a href="Work2.html" target="_blank" ><div id="meu_cursor_delay"><img src="source/textoGiratorio.svg" alt="" width="105vw" id="texto-giratorio"><!--<h4>My<br>Projects</h4>--></div></a>
+      
+      <div id="meu_cursor"></div>
+ </a>
+  
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Work2.html">Projects</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+    <div class="social-media">
+      <div class="icons" onmouseover="hideCustomCursor()" onmouseout="showCustomCursor()">
+        <a href="instagram.com" ><img src="source/insta.png" alt="Instagram"></a>
+        <br><a href="twitter.com"><img src="source/twitter.png" alt="Twitter"></a>
+        <br><a href="facebook.com"><img src="source/facebook.png" alt="Facebook"></a>
+        <div class="rectangle">
+
+        </div>
+        <p>Social Media</p>
+      </div>
+    </div>
+</div>
+<div class="title-index overlay">
+    <img src="source/olahellho-05.png" alt="">
+
+</div>
+
+
+ <script src="script.js"></script>
 </body>
 </html>

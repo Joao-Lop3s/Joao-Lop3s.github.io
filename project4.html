@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | JO</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900&display=swap" rel="stylesheet">
+</head>
+<body class="cursor">
+  <!-- Header -->
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="source/logo.png" alt="logo Joao" width="50px"></a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+
+      <nav onmouseover="hideCustomCursor()" onmouseout="showCustomCursor()">
+        <a href="index.html" class="active" >Home</a>
+        <a href="Work.html">Projects</a>
+        <a href="about.html">About</a>
+
+      </nav>
+    </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" id="closeBtn">&times;</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Work.html">Projects</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+  </div>
+      
+<!-- Conteudo -->
+
+
+<div class="title">
+    <h1>Aquatune</h1>
+    <h6>2023 | Music Fest</h6>
+</div>
+
+<img src="source/Projects/Aquatune-01.jpg" alt="" width="100%">
+
+
+
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+      <div class="footer-top">
+        <div class="left">
+          <p>Social: Behance / Instagram / Facebook</p>
+          <p>joaotomaspl@gmail.com</p>
+          <p>Fátima, Portugal</p>
+        </div>
+        <div class="right">
+          <a href="index.html">Home</a>
+          <a href="work.html">Projects</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Todos os Direitos não reservados © 2025</p>
+      </div>
+    </div>
+    
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>
